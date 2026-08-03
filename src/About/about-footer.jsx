@@ -74,7 +74,7 @@ function AboutFooter() {
                   className="w-full bg-gray-800 px-4 py-3 outline-none rounded-l-md"
                 />
 
-                <button className="bg-blue-900 px-5 rounded-r-md hover:bg-blue-700 transition">
+                <button className="bg-[#D4AF37] px-5 rounded-r-md hover:bg-blue-700 transition">
                   <FaPaperPlane />
                 </button>
               </div>
