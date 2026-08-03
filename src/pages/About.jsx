@@ -1,9 +1,8 @@
 import AboutWhyUs from "../components/about/AboutWhyUs";
 
-function About() {
+export default function About() {
   return (
     <div>
-      <h1>About Page</h1>
       <AboutWhyUs />
     </div>
   );

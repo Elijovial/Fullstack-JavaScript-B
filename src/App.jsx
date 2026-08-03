@@ -1,9 +1,12 @@
-import React from 'react'
+import About from "./pages/About";
+import React from "react";
 
-const App = () => {
+function App() {
   return (
-    <div className='text-red-500'>App</div>
-  )
+    <div className="App">
+      <About />
+    </div>
+  );
 }
 
-export default App
+export default App;
