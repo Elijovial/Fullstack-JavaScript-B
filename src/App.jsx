@@ -1,9 +1,7 @@
-import React from 'react'
+import AboutFooter from "./About/about-footer"
 
-const App = () => {
-  return (
-    <div className='text-red-500 text-8xl'>App</div>
-  )
+function App() {
+  return <AboutFooter />
 }
 
 export default App
