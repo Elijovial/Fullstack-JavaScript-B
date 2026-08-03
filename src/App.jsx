@@ -1,8 +1,13 @@
-import React from 'react'
 
-const App = () => {
+import Perfume from "./components/cards/perfume"
+
+
+// import Perfume from './components/Perfume'
+function App () {
   return (
-    <div className='text-red-500'>App</div>
+    <>
+    <Perfume/>
+    </>
   )
 }
 
