@@ -1,9 +1,14 @@
-import React from 'react'
+import Shoe from "./component/shoe";
 
-const App = () => {
-  return (
-    <div className='text-red-500'>App</div>
+// import ShoeData from "./component/shoeData";
+
+
+function App() {
+  return(
+    <>
+    <Shoe />
+    </>
   )
 }
 
-export default App
+export default App;
