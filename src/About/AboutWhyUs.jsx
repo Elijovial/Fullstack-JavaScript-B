@@ -48,7 +48,7 @@ const REASONS = [
 
 export default function AboutWhyUs() {
   return (
-    <section className="bg-[#FFF8E7] py-20 px-6">
+    <section className="bg-[#fdf9ef] py-20 px-6 min-h-screen">
       <div className="max-w-6xl mx-auto text-center mb-14">
         <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
           Why Choose Us
