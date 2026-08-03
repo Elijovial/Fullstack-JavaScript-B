@@ -1,4 +1,4 @@
-import AboutWhyUs from "../components/about/AboutWhyUs";
+import AboutWhyUs from "./AboutWhyUs";
 
 function About() {
   return (
