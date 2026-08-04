@@ -30,6 +30,9 @@ export function Cart() {
       ),
     );
   }
+  const total = itemsCart.reduce((sum, item) => {
+    return sum + item.price * item.quantity;
+  }, 0);
   // const [total,setTotal]=useState(0)
   // setTotal(
   // products.map((item)=>
@@ -75,7 +78,7 @@ export function Cart() {
           </div>
         ))}
       </div>
-      <p>Total:</p>
+      <p> Total: ${total}</p>
     </div>
   );
 }
