@@ -1,6 +1,6 @@
-"use client";
+"use client"
 
-import { useState } from "react";
+import { useState } from "react"
 import {
   FiArrowLeft,
   FiArrowRight,
@@ -8,18 +8,18 @@ import {
   FiMessageCircle,
   FiSmile,
   FiMessageSquare,
-} from "react-icons/fi";
-import { BsQuote } from "react-icons/bs";
-import marveImg from "../assets/clients/marve.jpeg";
-import michaelImg from "../assets/clients/michael.jpg";
-import sundayImg from "../assets/clients/sunday.jpg";
-import diriImg from "../assets/clients/diri.jpg";
-import miramImg from "../assets/clients/miram.jpg";
+} from "react-icons/fi"
+import { BsQuote } from "react-icons/bs"
+import marveImg from "../assets/clients/marve.jpeg"
+import michaelImg from "../assets/clients/michael.jpg"
+import sundayImg from "../assets/clients/sunday.jpg"
+import diriImg from "../assets/clients/diri.jpg"
+import miramImg from "../assets/clients/miram.jpg"
 const TESTIMONIALS = [
   {
     quote:
       "The team went out of their way to help us get set up. Every question was answered quickly and clearly.",
-    name: "Marvelous J",
+    name: "Marvellous O",
     role: "CEO",
     image: marveImg,
   },
@@ -51,23 +51,23 @@ const TESTIMONIALS = [
     role: "Product Owner",
     image: miramImg,
   },
-];
+]
 
 const STATS = [
   { icon: FiUsers, value: "5,400+", label: "Happy Customers" },
   { icon: FiMessageCircle, value: "1,250+", label: "Good Reviews" },
   { icon: FiSmile, value: "4,250+", label: "Winning Customers" },
   { icon: FiMessageSquare, value: "500+", label: "New Comments" },
-];
+]
 
 // Cycles through a list, exposing the current window + prev/next/jump controls.
 function useCarousel(items, visibleCount = 3) {
-  const [index, setIndex] = useState(0);
-  const total = items.length;
+  const [index, setIndex] = useState(0)
+  const total = items.length
   const visible = Array.from(
     { length: visibleCount },
     (_, i) => items[(index + i) % total],
-  );
+  )
 
   return {
     index,
@@ -75,14 +75,14 @@ function useCarousel(items, visibleCount = 3) {
     prev: () => setIndex((i) => (i - 1 + total) % total),
     next: () => setIndex((i) => (i + 1) % total),
     jump: setIndex,
-  };
+  }
 }
 
 const initials = (name) =>
   name
     .split(" ")
     .map((n) => n[0])
-    .join("");
+    .join("")
 
 function TestimonialCard({ t }) {
   return (
@@ -149,11 +149,11 @@ function TestimonialCard({ t }) {
         </div>
       </div>
     </>
-  );
+  )
 }
 
 function NavButton({ dir, onClick }) {
-  const Icon = dir === "prev" ? FiArrowLeft : FiArrowRight;
+  const Icon = dir === "prev" ? FiArrowLeft : FiArrowRight
   return (
     <button
       type="button"
@@ -163,11 +163,11 @@ function NavButton({ dir, onClick }) {
     >
       <Icon className="w-4 h-4" />
     </button>
-  );
+  )
 }
 
 export default function AboutClient() {
-  const { index, visible, prev, next, jump } = useCarousel(TESTIMONIALS, 3);
+  const { index, visible, prev, next, jump } = useCarousel(TESTIMONIALS, 3)
 
   return (
     <section className="bg-[#fff8e7] py-20 px-6">
@@ -228,5 +228,5 @@ export default function AboutClient() {
         ))}
       </div>
     </section>
-  );
+  )
 }
