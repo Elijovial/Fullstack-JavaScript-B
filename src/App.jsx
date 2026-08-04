@@ -1,4 +1,4 @@
-import About from "./About/About";
+import About from "./pages/About";
 import React from "react";
 
 function App() {
