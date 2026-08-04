@@ -1,5 +1,5 @@
 import heroimage from "../assets/hero-image.png";
-function AboutHero() {
+function AboutHero1() {
 
   const heroImage = heroimage;
 
@@ -56,4 +56,4 @@ function AboutHero() {
   );
 }
 
-export default AboutHero;
+export default AboutHero1;
