@@ -1,4 +1,4 @@
-import heroimage from "../assets/hero.png";
+import heroimage from "../assets/Hero-image1.png";
 
 function AboutHero1() {
   const heroImage = heroimage;
