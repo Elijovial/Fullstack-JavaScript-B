@@ -82,9 +82,9 @@ const productList = [
 ];
 const select = ["All", "Bags", "Shoes", "Perfume"];
 
-const Product = () => {
+const Product = ({ cartItems, setCartItems }) => {
   const [sortOption, setSortOption] = useState(select[0]);
-  const [cartItems, setCartItems] = useState([]);
+
   const sortedProduct =
     sortOption === select[0]
       ? [...productList]
