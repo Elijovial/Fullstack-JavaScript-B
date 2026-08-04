@@ -4,6 +4,7 @@ import AboutHero from "./AboutHero"
 import AboutFooter from "./about-footer"
 
 export default function About() {
+  x``
   return (
     <div>
       <AboutHero1 />
