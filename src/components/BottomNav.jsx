@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { FaHome, FaShoppingCart, FaUsers } from "react-icons/fa";
 import { AiOutlineProduct } from "react-icons/ai";
+import Main from "../HOME/Main";
+import About from "../About/About";
 
 function BottomNav({ darkMode, toggleTheme }) {
   const navItems = [
@@ -10,17 +12,17 @@ function BottomNav({ darkMode, toggleTheme }) {
       icon: <FaHome size={24} />,
     },
     {
-      path: "/Products",
+      path: "",
       name: "Products",
       icon: <AiOutlineProduct size={24} />,
     },
     {
-      path: "/cart",
+      path: "",
       name: "Cart",
       icon: <FaShoppingCart size={24} />,
     },
     {
-      path: "/about",
+      path: "/About",
       name: "About Us",
       icon: <FaUsers size={24} />,
     },

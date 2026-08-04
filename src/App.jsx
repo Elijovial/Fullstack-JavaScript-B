@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import { useState } from "react";
+import Main from "./HOME/Main";
 
 import Home from "./components/pages/Home";
 import Products from "./components/pages/Products";
@@ -23,14 +24,18 @@ function App() {
       }`}
     >
       <Routes>
+        
+        
+      </Routes>
+      {/* <Routes>
         <Route
           path="/"
           element={<MainLayout darkMode={darkMode} toggleTheme={toggleTheme} />}
         >
-          <Route
+           <Route
             index
             element={<Home darkMode={darkMode} toggleTheme={toggleTheme} />}
-          />
+          />/
           <Route
             path="products"
             element={<Products darkMode={darkMode} toggleTheme={toggleTheme} />}
@@ -44,7 +49,7 @@ function App() {
             element={<About darkMode={darkMode} toggleTheme={toggleTheme} />}
           />
         </Route>
-      </Routes>
+      </Routes> */}
     </div>
   );
 }
