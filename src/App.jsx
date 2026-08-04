@@ -1,12 +1,10 @@
 import React from "react";
-import Nav from "./HOME/nav";
-import Home from "./HOME/home";
+import Main from "./HOME/Main";
 
 function App() {
   return (
     <div>
-      <Nav />
-      <Home />
+      <Main />
     </div>
   );
 }
