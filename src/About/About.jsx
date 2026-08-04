@@ -1,7 +1,8 @@
 import AboutHero1 from "./AboutHero1";
 import AboutWhyUs from "./AboutWhyUs";
 import AboutHero from "./AboutHero";
-import AboutFooter from "./about-footer";
+import AboutClient from "./AboutClient";
+import AboutFooter from "./AboutFooter";
 
 export default function About() {
   return (
@@ -10,7 +11,6 @@ export default function About() {
       <AboutHero />
       <AboutWhyUs />
       <AboutClient />
-      <AboutFooter />
       <AboutFooter />
     </div>
   );
