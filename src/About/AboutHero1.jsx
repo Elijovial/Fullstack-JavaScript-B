@@ -1,6 +1,6 @@
-import heroimage from "../assets/hero-image.png";
-function AboutHero1() {
+import heroimage from "../assets/hero.png";
 
+function AboutHero1() {
   const heroImage = heroimage;
 
   return (
