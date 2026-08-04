@@ -1,3 +1,4 @@
+import React from "react";
 import {
   FiPackage,
   FiShield,
@@ -46,14 +47,22 @@ const REASONS = [
   },
 ];
 
-export default function AboutWhyUs() {
+export default function AboutWhyUs({ darkMode }) {
   return (
-    <section className="bg-[#FFF8E7] py-20 px-6">
-      <div className="max-w-6xl mx-auto text-center mb-14">
-        <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
+    <section
+      className={`min-h-screen ${
+        darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
+      } p-8`}
+    >
+      <div className="max-w-6xl mx-auto text-center ">
+        <h2
+          className={`text-3xl md:text-4xl font-bold ${
+            darkMode ? "bg-gray-900 text-slated-100" : "bg-white text-blue-900"
+          }`}
+        >
           Why Choose Us
         </h2>
-        <p className="mt-4 text-slate-500 max-w-xl mx-auto">
+        <p className="mt-6 mb-6 text-slate-500 max-w-xl mx-auto">
           Everything about how we sell is built around trust — in the product,
           the price, and the process.
         </p>

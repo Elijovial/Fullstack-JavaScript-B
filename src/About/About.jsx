@@ -1,11 +1,10 @@
 import AboutWhyUs from "./AboutWhyUs";
 import AboutHero from "./AboutHero";
 
-export default function About() {
+export default function About({ darkMode, toggleTheme }) {
   return (
     <div>
-      <AboutHero />
-      <AboutWhyUs />
+      <AboutWhyUs darkMode={darkMode} />
     </div>
   );
 }
