@@ -48,12 +48,12 @@ const REASONS = [
 
 export default function AboutWhyUs() {
   return (
-    <section className="bg-[#D4AF37] py-20 px-6">
+    <section className="bg-[#fff8e7] py-20 px-6">
       <div className="max-w-6xl mx-auto text-center mb-14">
-        <h2 className="text-3xl md:text-4xl font-bold text-white/90">
+        <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
           Why Choose Us
         </h2>
-        <p className="mt-4 text-white max-w-xl mx-auto">
+        <p className="mt-4 text-blue-900 max-w-xl mx-auto">
           Everything about how we sell is built around trust — in the product,
           the price, and the process.
         </p>

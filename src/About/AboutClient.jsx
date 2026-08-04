@@ -113,7 +113,7 @@ export default function AboutClient() {
   const { index, visible, prev, next, jump } = useCarousel(TESTIMONIALS, 3);
 
   return (
-    <section className="bg-white py-20 px-6">
+    <section className="bg-[#fff8e7] py-20 px-6">
       <div className="max-w-2xl mx-auto text-center mb-14">
         <div className="flex items-center justify-center gap-3 mb-4">
           <span className="h-px w-10 bg-blue-900" />
