@@ -1,14 +1,31 @@
-import React from "react";
-import { Cart } from "./Cart/cart";
-import Product from "./component/Product";
+// import React from "react";
+// import { Cart } from "./Cart/cart";
+// import Product from "./component/Product";
 
-const App = () => {
+// const App = () => {
+//   return (
+//     <div>
+//       <Cart cartItems={cartItems} />
+//       <Product />
+//     </div>
+//   );
+// };
+
+// export default App;
+import { useState } from "react";
+
+import Product from "./component/Product";
+import { Cart } from "./Cart/cart";
+
+function App() {
+  const [cartItems, setCartItems] = useState([]);
+
   return (
-    <div>
-      <Cart />
-      <Product />
-    </div>
+    <>
+      <Product cartItems={cartItems} setCartItems={setCartItems} />
+      <Cart cartItems={cartItems} />
+    </>
   );
-};
+}
 
 export default App;

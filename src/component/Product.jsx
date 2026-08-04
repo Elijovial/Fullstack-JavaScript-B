@@ -1,6 +1,7 @@
 // import productList from "./productList";
 import { ShoppingCart } from "lucide-react";
 import React, { useState } from "react";
+import { Cart } from "../Cart/cart";
 const productList = [
   {
     id: 1,
@@ -83,10 +84,17 @@ const select = ["All", "Bags", "Shoes", "Perfume"];
 
 const Product = () => {
   const [sortOption, setSortOption] = useState(select[0]);
+  const [cartItems, setCartItems] = useState([]);
   const sortedProduct =
     sortOption === select[0]
       ? [...productList]
       : [...productList].filter((item) => item.category === sortOption);
+
+  function addToCart(id) {
+    const product = productList.find((item) => item.id === id);
+
+    setCartItems((prev) => [...prev, product]);
+  }
 
   return (
     <div className="bg-[#fff8e7] min-h-screen p-4">
@@ -130,7 +138,10 @@ const Product = () => {
                 {item.name}{" "}
               </p>
               <p className="text-[#05214C] mb-3">{item.price}</p>
-              <button className="bg-[#05214C] text-white px-4 py-2 flex justify-center gap-2 rounded-xl hover:bg-gray-600 cursor-pointer items-center">
+              <button
+                onClick={(e) => addToCart(item.id)}
+                className="bg-[#05214C] text-white px-4 py-2 flex justify-center gap-2 rounded-xl hover:bg-gray-600 cursor-pointer items-center"
+              >
                 <ShoppingCart size={16} /> Add to Cart{" "}
               </button>
             </div>
