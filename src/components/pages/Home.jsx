@@ -1,8 +1,10 @@
+import Main from "../../HOME/Main";
+
 function Home() {
   return (
     <div className="p-6">
-      <h1 className="text-3xl font-bold text-{#D4AF37}">Home Page</h1>
-    </div>
+      <Main />
+     </div>
   );
 }
 
