@@ -4,21 +4,24 @@ import React, { useState } from "react";
 const productList = [
   {
     id: 1,
-    image: "https://i.pinimg.com/736x/95/13/8e/95138e0951241d6b9573fbfea0fb5bfd.jpg",
+    image:
+      "https://i.pinimg.com/736x/95/13/8e/95138e0951241d6b9573fbfea0fb5bfd.jpg",
     name: "Dolce & Gabbana The One",
     category: "Perfume",
     price: "$24.99",
   },
   {
     id: 2,
-    image: "https://i.pinimg.com/736x/2c/24/3f/2c243ffe4b673921d60552f8fbee6948.jpg",
+    image:
+      "https://i.pinimg.com/736x/2c/24/3f/2c243ffe4b673921d60552f8fbee6948.jpg",
     name: "Alaia Heels",
     category: "Shoes",
     price: "$23.99",
   },
   {
     id: 3,
-     image: "https://i.pinimg.com/736x/8c/d1/67/8cd16726be73737b03209241cd7c9444.jpg",
+    image:
+      "https://i.pinimg.com/736x/8c/d1/67/8cd16726be73737b03209241cd7c9444.jpg",
     name: "Prada milano",
     category: "Perfume",
     price: "$59.99",
@@ -34,7 +37,8 @@ const productList = [
   },
   {
     id: 5,
-     image: "https://i.pinimg.com/736x/23/39/1c/23391c9648da634a4729085939bba0e7.jpg",
+    image:
+      "https://i.pinimg.com/736x/23/39/1c/23391c9648da634a4729085939bba0e7.jpg",
     name: "Chanel No. 5",
     category: "Perfume",
     price: "$35.99",
@@ -42,7 +46,8 @@ const productList = [
 
   {
     id: 6,
-    image: "https://i.pinimg.com/1200x/a7/ae/0e/a7ae0ecd89dbd66d7ec5334d2bd5381e.jpg",
+    image:
+      "https://i.pinimg.com/1200x/a7/ae/0e/a7ae0ecd89dbd66d7ec5334d2bd5381e.jpg",
     name: "Alaia Heels (Black)",
     category: "Shoes",
     price: "$69.99",
@@ -85,22 +90,22 @@ const Product = () => {
 
   return (
     <div className="bg-[#fff8e7] min-h-screen p-4">
-      <h1 className="font-bold text-amber-900 text-4xl text-center mb-4">
+      <h1 className="font-bold text-[#05214C] text-4xl text-center mb-4">
         Featured Collection
       </h1>
       <p className="text-sm text-center mb-3">
         Discover the latest trends at unbeatable prices
       </p>
 
-      <hr className="w-30 bg-amber-900 h-0.5 rounded-full mx-auto mb-9"></hr>
+      <hr className="w-30 bg-[#05214C] h-0.5 rounded-full mx-auto mb-9"></hr>
       <div className="flex justify-end">
         <select
-          className="w-50 p-2 rounded-lg mb-4 bg-amber-900 text-white"
+          className="w-50 p-2 rounded-lg mb-4 bg-[#05214C] text-white"
           value={sortOption}
           onChange={(e) => setSortOption(e.target.value)}
         >
           {select.map((item, index) => (
-            <option key={index} className="bg-white text-amber-900">
+            <option key={index} className="bg-white text-[#05214C]">
               {item}
             </option>
           ))}
@@ -121,11 +126,11 @@ const Product = () => {
               />
             </div>
             <div className="mt-4">
-              <p className="font-bold mb-3 text-lg text-amber-900">
+              <p className="font-bold mb-3 text-lg text-[#05214C]">
                 {item.name}{" "}
               </p>
-              <p className="text-amber-900 mb-3">{item.price}</p>
-              <button className="bg-amber-900 text-white px-4 py-2 flex justify-center gap-2 rounded-xl hover:bg-gray-600 cursor-pointer items-center">
+              <p className="text-[#05214C] mb-3">{item.price}</p>
+              <button className="bg-[#05214C] text-white px-4 py-2 flex justify-center gap-2 rounded-xl hover:bg-gray-600 cursor-pointer items-center">
                 <ShoppingCart size={16} /> Add to Cart{" "}
               </button>
             </div>
