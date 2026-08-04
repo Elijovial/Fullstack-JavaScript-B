@@ -3,12 +3,13 @@ import MainLayout from "./layouts/MainLayout";
 import { useState } from "react";
 
 import Home from "./components/pages/Home";
-import Products from "./components/pages/Products";
+
 import Carts from "./components/pages/Carts";
 import About from "./About/About";
 import BottomNav from "./components/BottomNav";
 import Main from "./HOME/Main";
 import { Cart } from "./Cart/cart";
+import Product from "./components/JS-LUX/Products";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -32,10 +33,10 @@ function App() {
             path="/"
             element={<Home darkMode={darkMode} toggleTheme={toggleTheme} />}
           /> 
-          <Route
-            path="products"
-            element={<Products darkMode={darkMode} toggleTheme={toggleTheme} />}
-          />
+          {/* <Route
+            path="product"
+            element={<Product darkMode={darkMode} toggleTheme={toggleTheme} />}
+          /> */}
           <Route
             path="cart"
             element={<Cart darkMode={darkMode} toggleTheme={toggleTheme} />}
