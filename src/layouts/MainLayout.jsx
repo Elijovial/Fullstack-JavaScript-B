@@ -1,16 +1,15 @@
 import { Outlet } from "react-router-dom";
 import Main from "../HOME/Main";
 import BottomNav from "../components/BottomNav";
-import About from "../About/About";
+import Home from "../components/pages/Home";
 
 function MainLayout({ darkMode, toggleTheme }) {
   return (
     <>
       
-      <Main darkMode={darkMode} toggleTheme={toggleTheme} />
-      
 
-      <Outlet />
+<Outlet />
+<Home />
       <BottomNav
         darkMode={darkMode}
         toggleTheme={toggleTheme}
