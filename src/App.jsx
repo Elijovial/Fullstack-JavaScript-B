@@ -8,6 +8,7 @@ import Carts from "./components/pages/Carts";
 import About from "./About/About";
 import BottomNav from "./components/BottomNav";
 import Main from "./HOME/Main";
+import { Cart } from "./Cart/cart";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -37,7 +38,7 @@ function App() {
           />
           <Route
             path="cart"
-            element={<Carts darkMode={darkMode} toggleTheme={toggleTheme} />}
+            element={<Cart darkMode={darkMode} toggleTheme={toggleTheme} />}
           />
           <Route
             path="about"
