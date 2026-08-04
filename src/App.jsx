@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Product from "./component/Product";
 
 const App = () => {
   return (
-    <div className='text-red-500'>App</div>
-  )
-}
+    <>
+      <Product />
+    </>
+  );
+};
 
-export default App
+export default App;
