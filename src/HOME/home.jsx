@@ -2,7 +2,7 @@ import { FaShoppingCart } from "react-icons/fa";
 
 function Home() {
   return (
-    <div className="bg-[url('./bg-image.png')] bg-cover bg-center w-full min-h-fit lg:flex md:justify-between md:items-center mx-auto">
+    <div className="bg-[url('./bg-image.png')] min-h-screen  bg-cover bg-center w-full  lg:flex md:justify-between md:items-center mx-auto">
       <div className="text-center  lg:ml-35">
         <h1 className="tracking-tighter text-5xl md:text-7xl font-bold text-blue-900 pt-10 lg:pt-1 mb-3">
           Style That Inspires

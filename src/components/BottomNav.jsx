@@ -3,6 +3,9 @@ import { FaHome, FaShoppingCart, FaUsers } from "react-icons/fa";
 import { AiOutlineProduct } from "react-icons/ai";
 import Main from "../HOME/Main";
 import About from "../About/About";
+import Product from "../component/Product";
+
+
 
 function BottomNav({ darkMode, toggleTheme }) {
   const navItems = [
@@ -12,7 +15,7 @@ function BottomNav({ darkMode, toggleTheme }) {
       icon: <FaHome size={24} />,
     },
     {
-      path: "",
+      path: "/Product",
       name: "Products",
       icon: <AiOutlineProduct size={24} />,
     },
