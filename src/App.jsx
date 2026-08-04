@@ -24,27 +24,10 @@ function App() {
     >
       
        <Routes>
-        <Route
-          path="/"
-          element={<MainLayout darkMode={darkMode} toggleTheme={toggleTheme} />}
-        >
-          {/* {/* <Route
-            index
-            element={<Home darkMode={darkMode} toggleTheme={toggleTheme} />}
-          /> */}
-          <Route
-            path="products"
-            element={<Products darkMode={darkMode} toggleTheme={toggleTheme} />}
-          />
-          <Route
-            path="cart"
-            element={<Carts darkMode={darkMode} toggleTheme={toggleTheme} />}
-          />
-          <Route
-            path="about"
-            element={<About darkMode={darkMode} toggleTheme={toggleTheme} />}
-          /> 
-        </Route>
+          <Route path="/" element={<MainLayout darkMode={darkMode} toggleTheme={toggleTheme} />}>
+            <Route index element={<Main darkMode={darkMode} toggleTheme={toggleTheme} />} />
+            <Route path="/About" element={<About darkMode={darkMode} toggleTheme={toggleTheme} />} />
+          </Route>
       </Routes> 
     </div>
   );

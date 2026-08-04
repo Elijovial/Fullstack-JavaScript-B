@@ -8,8 +8,9 @@ function MainLayout({ darkMode, toggleTheme }) {
     <>
       
 
-<Outlet />
-<Home />
+        <Outlet />
+        
+
       <BottomNav
         darkMode={darkMode}
         toggleTheme={toggleTheme}
