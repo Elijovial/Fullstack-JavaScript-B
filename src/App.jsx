@@ -9,6 +9,7 @@ import About from "./About/About";
 import BottomNav from "./components/BottomNav";
 
 function App() {
+  
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleTheme = () => {

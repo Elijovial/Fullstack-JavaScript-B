@@ -55,10 +55,14 @@ export default function AboutWhyUs({ darkMode }) {
       } p-8`}
     >
       <div className="max-w-6xl mx-auto text-center ">
-        <h2 className="text-3xl md:text-4xl font-bold text-slate-100">
+        <h2
+          className={`text-3xl md:text-4xl font-bold ${
+            darkMode ? "bg-gray-900 text-slated-100" : "bg-white text-blue-900"
+          }`}
+        >
           Why Choose Us
         </h2>
-        <p className="mt-4 text-slate-500 max-w-xl mx-auto">
+        <p className="mt-6 mb-6 text-slate-500 max-w-xl mx-auto">
           Everything about how we sell is built around trust — in the product,
           the price, and the process.
         </p>
