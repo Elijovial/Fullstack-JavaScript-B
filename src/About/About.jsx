@@ -1,9 +1,9 @@
 import AboutWhyUs from "./AboutWhyUs";
 
-export default function About() {
+export default function About({ darkMode, toggleTheme }) {
   return (
     <div>
-      <AboutWhyUs />
+      <AboutWhyUs darkMode={darkMode} />
     </div>
   );
 }

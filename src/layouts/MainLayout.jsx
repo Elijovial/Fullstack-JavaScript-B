@@ -1,13 +1,16 @@
 import { Outlet } from "react-router-dom";
 import BottomNav from "../components/BottomNav";
 
-function MainLayout() {
+function MainLayout({ darkMode, toggleTheme }) {
   return (
-    <div className="min-h-screen bg-gray-300 pb-20">
+    <>
       <Outlet />
 
-      <BottomNav />
-    </div>
+      <BottomNav
+        darkMode={darkMode}
+        toggleTheme={toggleTheme}
+      />
+    </>
   );
 }
 
