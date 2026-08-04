@@ -1,11 +1,7 @@
-import About from "./About/About";
+import AboutFooter from "./About/about-footer"
 
 function App() {
-  return (
-    <div className="App">
-      <About />
-    </div>
-  );
+  return <AboutFooter />
 }
 
-export default App;
+export default App
