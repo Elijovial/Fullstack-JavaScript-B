@@ -1,5 +1,4 @@
-import About from "./pages/About";
-import React from "react";
+import About from "./About/About";
 
 function App() {
   return (
