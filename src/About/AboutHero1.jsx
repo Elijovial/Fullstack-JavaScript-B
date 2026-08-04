@@ -1,6 +1,6 @@
-import heroimage from "../assets/hero-image.png"; // Update the path to your image
+import heroimage from "../assets/hero-image.png";
 function AboutHero() {
-  // Add a relative path or absolute URL here.
+
   const heroImage = heroimage;
 
   return (
@@ -9,7 +9,7 @@ function AboutHero() {
 
       <div className="absolute left-20 top-10 h-44 w-44 rounded-full border border-white/10"></div>
 
-      <div className="relative mx-auto flex min-h-70 max-w-7xl flex-col items-center justify-between gap-10 px-6 py-1 md:flex-row md:px-12 lg:px-20">
+      <div className="relative mx-auto flex min-h-70 max-w-7xl flex-col items-center justify-center lg:justify-between gap-10 px-6 py-1 md:flex-row md:px-12 lg:px-20">
         {/* Left content */}
         <div className="text-center text-white md:text-left">
           <h1 className="mb-4 text-4xl font-bold md:text-5xl">
@@ -31,7 +31,7 @@ function AboutHero() {
         </div>
 
         {/* Image */}
-        <div className="w-full max-w-md">
+        <div className="w-full max-w-md hidden md:block">
           {heroImage ? (
             <img
               src={heroImage}

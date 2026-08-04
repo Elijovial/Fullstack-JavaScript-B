@@ -6,6 +6,7 @@ export default function About() {
   return (
     <div>
       <AboutHero1 />
+      <AboutHero />
       <AboutWhyUs />
     </div>
   );
