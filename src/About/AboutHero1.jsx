@@ -12,7 +12,9 @@ function AboutHero1() {
       <div className="relative mx-auto flex min-h-70 max-w-7xl flex-col items-center justify-center lg:justify-between gap-10 px-6 py-1 md:flex-row md:px-12 lg:px-20">
         {/* Left content */}
         <div className="text-center text-white md:text-left">
-          <h1 className="mb-4 text-4xl font-bold md:text-5xl">About Us</h1>
+          <h1 className="mb-4 text-4xl font-bold md:text-5xl">
+            About Us
+          </h1>
 
           <div className="flex items-center justify-center gap-2 text-sm md:justify-start">
             <a
@@ -39,9 +41,12 @@ function AboutHero1() {
           ) : (
             <div className="flex h-full w-full items-center justify-center rounded-2xl border-2 border-dashed border-white/40 bg-white/10 px-5 text-center text-white/70">
               <div>
-                <p className="text-lg font-semibold"></p>
+                <p className="text-lg font-semibold">
+                </p>
 
-                <p className="mt-2 text-sm"></p>
+                <p className="mt-2 text-sm">
+
+                </p>
               </div>
             </div>
           )}
