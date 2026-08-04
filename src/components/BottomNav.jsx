@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
-import { FaHome, FaShoppingCart, FaUsers } from "react-icons/fa";
+import { FaAssistiveListeningSystems, FaHome, FaShoppingCart, FaUsers } from "react-icons/fa";
 import { AiOutlineProduct } from "react-icons/ai";
-
+import { IoSettingsOutline } from "react-icons/io5";
+import { FaGear } from "react-icons/fa6";
 function BottomNav({ darkMode, toggleTheme }) {
   const navItems = [
     {
@@ -24,10 +25,15 @@ function BottomNav({ darkMode, toggleTheme }) {
       name: "About Us",
       icon: <FaUsers size={24} />,
     },
+    {
+      path: "/setting",
+      name: "Settings",
+      icon: <FaGear size={24} />,
+    },
   ];
 
   return (
-    <nav className="fixed bottom-0 left-0 w-full bg-white shadow-md">
+    <nav className="sticky bottom-0 left-0 w-full bg-white shadow-md z-1">
       <div className="flex justify-around items-center py-2">
         {navItems.map((item) => (
           <NavLink
@@ -55,7 +61,7 @@ function BottomNav({ darkMode, toggleTheme }) {
             }`}
           >
             <span
-              className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full transition-transform duration-300 ${
+              className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-lg transition-transform duration-300 ${
                 darkMode ? "translate-x-8" : ""
               }`}
             />

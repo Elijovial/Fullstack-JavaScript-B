@@ -11,8 +11,8 @@ function Nav() {
           JAVA<span className="text-[#D4AF37] text-xl sm:text-2xl">LUXURY</span>
         </h1>
       </div>
-      <div className=" px-3 sm:px-10 ">
-        <button className="bg-blue-900 text-white hover:cursor-pointer text-sm sm:text-md px-1.5 py-1  sm:p-2 rounded font-medium active:bg-blue-500">
+      <div className=" px-5 sm:px-10 ">
+        <button className="bg-blue-600 text-white hover:cursor-pointer text-sm sm:text-md px-1.5 py-2  sm:p-2 rounded font-medium active:bg-blue-300 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
           Order Online
         </button>
       </div>

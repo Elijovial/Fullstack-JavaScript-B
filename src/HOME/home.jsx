@@ -3,7 +3,7 @@ import { FaShoppingCart } from "react-icons/fa";
 function Home() {
   return (
     <div className="bg-[url('./bg-image.png')] bg-cover bg-center w-full min-h-fit lg:flex md:justify-around md:items-center mx-auto">
-      <div className="text-center  lg:ml-35">
+      <div className="text-center lg:ml-35">
         <h1 className="tracking-tighter text-5xl md:text-7xl font-bold text-blue-900 pt-10 lg:pt-1 mb-3">
           Style That Inspires
         </h1>
@@ -11,7 +11,7 @@ function Home() {
           Discover the latest trends and exclusive deals.
         </p>
         <div className="flex justify-center mt-5 lg:mt-10 mb-2 md:mb-5">
-          <button className="flex gap-2 bg-[#D4AF37] text-white font-bold text-xl py-2 px-5 md:px-10 rounded-2xl hover:cursor-pointer active:bg-amber-200 shadow-md shadow-gray-400">
+          <button className="flex gap-2 bg-[#D4AF37] text-white font-bold text-xl py-2 px-5 md:px-10 rounded-2xl hover:cursor-pointer active:bg-amber-200 shadow-md shadow-gray-400 hover:-translate-y-1 transition-all duration-300">
             Shop Now
             <FaShoppingCart size={24} color="white" />
           </button>
