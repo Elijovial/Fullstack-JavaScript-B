@@ -1,7 +1,8 @@
-import AboutHero1 from "./AboutHero1"
-import AboutWhyUs from "./AboutWhyUs"
-import AboutHero from "./AboutHero"
-import AboutFooter from "./about-footer"
+import AboutHero1 from "./AboutHero1";
+import AboutWhyUs from "./AboutWhyUs";
+import AboutHero from "./AboutHero";
+import AboutClient from "./AboutClient";
+import AboutFooter from "./AboutFooter";
 
 export default function About() {
   x``
@@ -10,7 +11,8 @@ export default function About() {
       <AboutHero1 />
       <AboutHero />
       <AboutWhyUs />
+      <AboutClient />
       <AboutFooter />
     </div>
-  )
+  );
 }

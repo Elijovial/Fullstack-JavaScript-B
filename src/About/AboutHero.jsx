@@ -18,12 +18,12 @@ export default function AboutHero() {
           feel.
         </p>
         <div className="flex justify-evenly lg:justify-evenly items-center mb-8">
-          <GiClothes className="w-8 h-8 lg:w-12 h-12 text-[#C9A227]" />
-          <GiRunningShoe className="w-8 h-8 lg:w-12 h-12 text-[#05214C]" />
-          <PiHandbagFill className="w-8 h-8 lg:w-12 h-12 text-[#7D6C4A]" />
-          <FaCrown className="w-8 h-8 lg:w-12 h-12 text-[#21165A]" />
+          <GiClothes className="w-8 h-8 lg:w-12 lg:h-12 text-[#C9A227]" />
+          <GiRunningShoe className="w-8 h-8 lg:w-12 lg:h-12 text-[#05214C]" />
+          <PiHandbagFill className="w-8 h-8 lg:w-12 lg:h-12 text-[#7D6C4A]" />
+          <FaCrown className="w-8 h-8 lg:w-12 lg:h-12 text-[#21165A]" />
         </div>
-        <button className="px-4 py-1 lg:px-6 py-2.5 bg-[#31548C] text-[#FFFFFF] font-bold rounded-full hover:bg-[#313233] hover:text-[#111213]">
+        <button className="px-4 py-1 lg:px-6 lg:py-2.5 bg-[#31548C] text-[#FFFFFF] font-bold rounded-full hover:bg-[#313233] hover:text-[#111213]">
           Shop Now
         </button>
       </div>
