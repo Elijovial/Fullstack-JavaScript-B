@@ -1,9 +1,10 @@
 import AboutWhyUs from "./AboutWhyUs";
+import AboutHero from "./AboutHero";
 
-function About() {
+export default function About() {
   return (
     <div>
-      <h1>About Page</h1>
+      <AboutHero />
       <AboutWhyUs />
     </div>
   );
