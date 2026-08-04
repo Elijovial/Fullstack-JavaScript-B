@@ -8,8 +8,8 @@ import Carts from "./components/pages/Carts";
 import About from "./About/About";
 import BottomNav from "./components/BottomNav";
 import Main from "./HOME/Main";
-import { Cart } from "./Cart/cart";
-import Product from "./components/JS-LUX/Products";
+
+import Products from "./components/pages/Product";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -33,13 +33,13 @@ function App() {
             path="/"
             element={<Home darkMode={darkMode} toggleTheme={toggleTheme} />}
           /> 
-          {/* <Route
+          <Route
             path="product"
-            element={<Product darkMode={darkMode} toggleTheme={toggleTheme} />}
-          /> */}
+            element={<Products darkMode={darkMode} toggleTheme={toggleTheme} />}
+          />
           <Route
             path="cart"
-            element={<Cart darkMode={darkMode} toggleTheme={toggleTheme} />}
+            element={<Carts darkMode={darkMode} toggleTheme={toggleTheme} />}
           />
           <Route
             path="about"

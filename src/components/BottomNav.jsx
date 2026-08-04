@@ -10,7 +10,7 @@ function BottomNav({ darkMode, toggleTheme }) {
       icon: <FaHome size={24} />,
     },
     {
-      path: "/Products",
+      path: "/product",
       name: "Products",
       icon: <AiOutlineProduct size={24} />,
     },

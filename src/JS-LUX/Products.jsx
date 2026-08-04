@@ -81,7 +81,7 @@ const productList = [
 ];
 const select = ["All", "Bags", "Shoes", "Perfume"];
 
-const Product = () => {
+function Product({ darkMode }) {
   const [sortOption, setSortOption] = useState(select[0]);
   const sortedProduct =
     sortOption === select[0]
@@ -89,8 +89,16 @@ const Product = () => {
       : [...productList].filter((item) => item.category === sortOption);
 
   return (
-    <div className="bg-[#fff8e7] min-h-screen p-4">
-      <h1 className="font-bold text-[#05214C] text-4xl text-center mb-4">
+    <div
+      className={`min-h-screen ${
+        darkMode ? "bg-gray-900 text-white" : "bg-[#fff8e7] text-black"
+      } p-8`}
+    >
+      <h1
+        className={`font-bold text-[#05214C] text-4xl text-center mb-4${
+          darkMode ? "bg-gray-900 text-white" : "bg-[#fff8e7] text-black"
+        } p-8`}
+      >
         Featured Collection
       </h1>
       <p className="text-sm text-center mb-3">
@@ -139,6 +147,6 @@ const Product = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Product;

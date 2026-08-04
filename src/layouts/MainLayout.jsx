@@ -5,14 +5,8 @@ import Home from "../components/pages/Home";
 function MainLayout({ darkMode, toggleTheme }) {
   return (
     <>
-      
-
-<Outlet />
-<Home />
-      <BottomNav
-        darkMode={darkMode}
-        toggleTheme={toggleTheme}
-      />
+      <Outlet />
+      <BottomNav darkMode={darkMode} toggleTheme={toggleTheme} />
     </>
   );
 }
