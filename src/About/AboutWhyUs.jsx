@@ -51,13 +51,13 @@ export default function AboutWhyUs({ darkMode }) {
   return (
     <section
       className={`min-h-screen ${
-        darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
+        darkMode ? "bg-gray-900 text-white" : "bg-[#fff8e7] text-black"
       } p-8`}
     >
-      <div className="max-w-6xl mx-auto text-center ">
+      <div className="max-w-6xl mx-auto text-center mt-10">
         <h2
           className={`text-3xl md:text-4xl font-bold ${
-            darkMode ? "bg-gray-900 text-slated-100" : "bg-white text-blue-900"
+            darkMode ? "bg-gray-900 text-slated-100" : " text-blue-900"
           }`}
         >
           Why Choose Us
@@ -75,11 +75,11 @@ export default function AboutWhyUs({ darkMode }) {
             className="bg-white rounded-2xl border border-slate-100 p-8 text-left shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
           >
             <div className="flex items-start justify-between mb-6">
-              <span className="text-3xl font-extrabold text-slate-100">
+              <span className="text-3xl font-extrabold text-slate-200">
                 {number}
               </span>
               <div className="w-12 h-12 rounded-xl bg-[#0047FF]/10 flex items-center justify-center">
-                <Icon className="w-6 h-6 text-[#0047FF]" />
+                <Icon className="w-6 h-6 text-[#638df8]" />
               </div>
             </div>
             <h3 className="text-lg font-semibold text-slate-900 mb-2">

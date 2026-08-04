@@ -9,7 +9,6 @@ import About from "./About/About";
 import BottomNav from "./components/BottomNav";
 
 function App() {
-  
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleTheme = () => {
@@ -27,10 +26,10 @@ function App() {
           path="/"
           element={<MainLayout darkMode={darkMode} toggleTheme={toggleTheme} />}
         >
-          <Route
+          {/* {/* <Route
             index
             element={<Home darkMode={darkMode} toggleTheme={toggleTheme} />}
-          />
+          /> */}
           <Route
             path="products"
             element={<Products darkMode={darkMode} toggleTheme={toggleTheme} />}
@@ -42,7 +41,7 @@ function App() {
           <Route
             path="about"
             element={<About darkMode={darkMode} toggleTheme={toggleTheme} />}
-          />
+          /> 
         </Route>
       </Routes>
     </div>

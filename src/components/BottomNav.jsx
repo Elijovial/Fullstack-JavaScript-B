@@ -46,7 +46,7 @@ function BottomNav({ darkMode, toggleTheme }) {
           </NavLink>
         ))}
 
-        <div className="flex justify-center py-3 items-center text-blue-900 space-x-2">
+        <div className="flex flex-col justify-center py-3 items-center text-blue-900 space-x-2">
           <p>{darkMode ? "🌙 Dark " : "☀️Light"}</p>
           <button
             onClick={toggleTheme}
