@@ -10,37 +10,46 @@ import {
   FiMessageSquare,
 } from "react-icons/fi";
 import { BsQuote } from "react-icons/bs";
-
+import marveImg from "../assets/clients/marve.jpeg";
+import michaelImg from "../assets/clients/michael.jpg";
+import sundayImg from "../assets/clients/sunday.jpg";
+import diriImg from "../assets/clients/diri.jpg";
+import miramImg from "../assets/clients/miram.jpg";
 const TESTIMONIALS = [
   {
     quote:
       "The team went out of their way to help us get set up. Every question was answered quickly and clearly.",
-    name: "Johan Martin",
+    name: "Marvelous J",
     role: "CEO",
+    image: marveImg,
   },
   {
     quote:
       "Ordering was simple and the product matched exactly what was described. That's rarer than it should be.",
-    name: "Jamie Anderson",
+    name: "Michael O",
     role: "Manager",
+    image: michaelImg,
   },
   {
     quote:
       "Shipping was fast and support answered a follow-up question the same day. Easy to recommend.",
-    name: "John Peter",
-    role: "Area Manager",
+    name: "Sunday Ozua",
+    role: "Software Engineer",
+    image: sundayImg,
   },
   {
     quote:
       "Pricing was transparent from the start and there were no surprise fees at checkout.",
-    name: "Amara Okafor",
+    name: "Mr Diri",
     role: "Operations Lead",
+    image: diriImg,
   },
   {
     quote:
       "We switched providers mid-project and the onboarding team made the transition painless.",
-    name: "Lucas Ferreira",
+    name: "Miss Miram",
     role: "Product Owner",
+    image: miramImg,
   },
 ];
 
@@ -77,21 +86,69 @@ const initials = (name) =>
 
 function TestimonialCard({ t }) {
   return (
-    <div className="flex flex-col justify-between h-full bg-blue-900 rounded-2xl border border-slate-100 shadow-sm p-7">
-      <div>
-        <div className="w-11 h-11 rounded-full bg-white text-[#D4AF37] text-sm font-semibold flex items-center justify-center mb-5">
-          {initials(t.name)}
+    <>
+      {/* Flip mechanics: perspective on the outer wrapper, preserve-3d + rotateY on hover
+          for the inner card, backface-hidden on both faces so they don't bleed through. */}
+      <style>{`
+        .flip-card { perspective: 1200px; }
+        .flip-card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+        }
+        .flip-card:hover .flip-card-inner {
+          transform: rotateY(180deg);
+        }
+        .flip-card-face {
+          position: absolute;
+          inset: 0;
+          backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
+        }
+        .flip-card-back {
+          transform: rotateY(180deg);
+        }
+      `}</style>
+
+      <div className="flip-card h-72">
+        <div className="flip-card-inner">
+          {/* FRONT */}
+          <div className="flip-card-face flex flex-col justify-between h-full bg-white rounded-2xl border border-slate-100 shadow-sm p-7">
+            <div>
+              <div className="w-11 h-11 rounded-full bg-blue-900 text-white text-sm font-semibold flex items-center justify-center mb-5">
+                {initials(t.name)}
+              </div>
+              <p className="text-sm text-slate-500 leading-relaxed mb-6">
+                {t.quote}
+              </p>
+            </div>
+            <div className="flex items-end justify-between">
+              <div>
+                <p className="text-sm font-semibold text-slate-900">{t.name}</p>
+                <p className="text-xs text-slate-400">{t.role}</p>
+              </div>
+              <BsQuote className="text-blue-900 w-6 h-6 opacity-80" />
+            </div>
+          </div>
+
+          {/* BACK */}
+          <div className="flip-card-face flip-card-back rounded-2xl overflow-hidden shadow-sm">
+            <img
+              src={t.image}
+              alt={t.name}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-5">
+              <p className="text-sm font-semibold text-white">{t.name}</p>
+              <p className="text-xs text-white/80">{t.role}</p>
+            </div>
+          </div>
         </div>
-        <p className="text-sm text-white/80 leading-relaxed mb-6">{t.quote}</p>
       </div>
-      <div className="flex items-end justify-between">
-        <div>
-          <p className="text-sm font-semibold text-white/80">{t.name}</p>
-          <p className="text-xs text-slate-400">{t.role}</p>
-        </div>
-        <BsQuote className="text-white/80 w-6 h-6 opacity-70" />
-      </div>
-    </div>
+    </>
   );
 }
 
@@ -118,13 +175,13 @@ export default function AboutClient() {
         <div className="flex items-center justify-center gap-3 mb-4">
           <span className="h-px w-10 bg-blue-900" />
           <FiArrowRight className="text-blue-900 rotate-180 w-4 h-4" />
-          <h2 className="text-2xl md:text-3xl font-bold text-blue-900">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900">
             What Client Say
           </h2>
           <FiArrowRight className="text-blue-900 w-4 h-4" />
           <span className="h-px w-10 bg-blue-900" />
         </div>
-        <p className="text-sm text-slate-600 leading-relaxed">
+        <p className="text-sm text-slate-500 leading-relaxed">
           Explore the world's best and largest catalog of considered goods. We
           want to be part of your everyday, from first order to the next.
         </p>
@@ -143,7 +200,7 @@ export default function AboutClient() {
               key={i}
               aria-label={`Go to testimonial ${i + 1}`}
               onClick={() => jump(i)}
-              className={`w-2 h-2 rounded-full transition-colors ${i === index ? "bg-blue-900" : "bg-[#D4AF37]"}`}
+              className={`w-2 h-2 rounded-full transition-colors ${i === index ? "bg-blue-900" : "bg-white/70"}`}
             />
           ))}
         </div>
@@ -156,13 +213,13 @@ export default function AboutClient() {
         {STATS.map(({ icon: Icon, value, label }) => (
           <div
             key={label}
-            className="bg-blue-900 rounded-2xl border border-slate-100 shadow-sm p-6 flex items-center gap-4"
+            className="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex items-center gap-4"
           >
             <div className="w-11 h-11 rounded-xl bg-blue-900 flex items-center justify-center shrink-0">
-              <Icon className="w-5 h-5 text-[#D4AF37]" />
+              <Icon className="w-5 h-5 text-[#fff8e7]" />
             </div>
             <div>
-              <p className="text-lg font-bold text-white/80 leading-none">
+              <p className="text-lg font-bold text-slate-900 leading-none">
                 {value}
               </p>
               <p className="text-xs text-slate-400 mt-1">{label}</p>
