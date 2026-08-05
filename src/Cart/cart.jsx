@@ -161,7 +161,7 @@ export function Cart({ cartItems }) {
               </div>
               {/* <p className="text-xl text-[#3525cd] font-bold">
                 {items.price * items.quantity}
-              </p> */}
+              </p>bnbjbj */}
             </div>
           </div>
         ))}
