@@ -19,6 +19,7 @@ function App() {
   };
 
   return (
+<<<<<<< HEAD
     <div
       className={`min-h-screen ${
         darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
@@ -33,6 +34,10 @@ function App() {
             <Route path="/Cart" element={<Cart darkMode={darkMode} toggleTheme={toggleTheme} />} />
           </Route>
       </Routes> 
+=======
+    <div>
+      <Settings />
+>>>>>>> Emma-settings
     </div>
   );
 };
