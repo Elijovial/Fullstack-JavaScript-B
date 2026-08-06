@@ -49,6 +49,7 @@ const REASONS = [
 
 export default function AboutWhyUs({ darkMode }) {
   return (
+<<<<<<< HEAD
     <section
       className={`min-h-screen ${
         darkMode ? "bg-gray-900 text-white" : "bg-[#fff8e7] text-black"
@@ -63,6 +64,14 @@ export default function AboutWhyUs({ darkMode }) {
           Why Choose Us
         </h2>
         <p className="mt-6 mb-6 text-slate-500 max-w-xl mx-auto">
+=======
+    <section className="bg-[#fff8e7] py-20 px-6">
+      <div className="max-w-6xl mx-auto text-center mb-14">
+        <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
+          Why Choose Us
+        </h2>
+        <p className="mt-4 text-blue-900 max-w-xl mx-auto">
+>>>>>>> about
           Everything about how we sell is built around trust — in the product,
           the price, and the process.
         </p>
@@ -78,8 +87,13 @@ export default function AboutWhyUs({ darkMode }) {
               <span className="text-3xl font-extrabold text-slate-200">
                 {number}
               </span>
+<<<<<<< HEAD
               <div className="w-12 h-12 rounded-xl bg-[#0047FF]/10 flex items-center justify-center">
                 <Icon className="w-6 h-6 text-[#638df8]" />
+=======
+              <div className="w-12 h-12 rounded-xl bg-blue-900 flex items-center justify-center">
+                <Icon className="w-6 h-6 text-[#D4AF37]" />
+>>>>>>> about
               </div>
             </div>
             <h3 className="text-lg font-semibold text-slate-900 mb-2">

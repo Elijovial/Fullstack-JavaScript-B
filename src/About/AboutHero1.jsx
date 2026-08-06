@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import heroimage from "../assets/hero-image.png";
 function AboutHero() {
 
+=======
+import heroimage from "../assets/Hero-image1.png";
+
+function AboutHero1() {
+>>>>>>> about
   const heroImage = heroimage;
 
   return (
@@ -56,4 +62,8 @@ function AboutHero() {
   );
 }
 
+<<<<<<< HEAD
 export default AboutHero;
+=======
+export default AboutHero1;
+>>>>>>> about
