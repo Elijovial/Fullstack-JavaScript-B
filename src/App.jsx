@@ -3,6 +3,7 @@ import MainLayout from "./layouts/MainLayout";
 import { useState } from "react";
 import Main from "./HOME/Main";
 import Product from "./component/Product";
+import Settings from "./Settings/Settings";
 
 import Cart from "./Cart/Cart";
 import Home from "./components/pages/Home";
@@ -19,7 +20,6 @@ function App() {
   };
 
   return (
-<<<<<<< HEAD
     <div
       className={`min-h-screen ${
         darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
@@ -32,12 +32,9 @@ function App() {
             <Route path="/About" element={<About darkMode={darkMode} toggleTheme={toggleTheme} />} />
             <Route path="/Product" element={<Product darkMode={darkMode} toggleTheme={toggleTheme} />} />
             <Route path="/Cart" element={<Cart darkMode={darkMode} toggleTheme={toggleTheme} />} />
+            <Route path="/Settings" element={<Settings darkMode={darkMode} toggleTheme={toggleTheme} />} />
           </Route>
       </Routes> 
-=======
-    <div>
-      <Settings />
->>>>>>> Emma-settings
     </div>
   );
 };

@@ -4,6 +4,7 @@ import { AiOutlineProduct } from "react-icons/ai";
 import Main from "../HOME/Main";
 import About from "../About/About";
 import Product from "../component/Product";
+import { CiSettings } from "react-icons/ci";
 
 
 
@@ -26,15 +27,16 @@ function BottomNav({ darkMode, toggleTheme }) {
       icon: <FaShoppingCart size={24} />,
     },
     {
-      path: "/About",
-      name: "About Us",
+      path: "",
+      name: "settings",
       icon: <FaUsers size={24} />,
     },
     {
-      path: "/About",
-      name: "About Us",
-      
-    },
+      path: "/Settings",
+      name: "Settings",
+      icon: <CiSettings size={24} />,
+    }
+    
     
   ];
 
