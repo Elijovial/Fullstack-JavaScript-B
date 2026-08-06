@@ -40,7 +40,7 @@ const cart = () => {
   //   // products.find((items) => items.price) *
 
   return (
-    <div>
+    <div className="min-h-screen">
       <div className="flex justify-between w-[80%] mx-auto mt-5">
         <h1 className="text-5xl text-black font-bold">Your Cart</h1>
         <p>({itemsCart.length} items)</p>

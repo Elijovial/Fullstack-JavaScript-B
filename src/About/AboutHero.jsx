@@ -4,13 +4,8 @@ import { PiHandbagFill } from "react-icons/pi";
 import { FaCrown } from "react-icons/fa";
 export default function AboutHero() {
   return (
-<<<<<<< HEAD
-    <div className="w-full flex justify-around items-center py-5 px-16 mb-10">
-      <div className="w-1/2 ">
-=======
     <div className="w-full flex flex-col-reverse lg:flex-row justify-around items-center py-5 px-16">
       <div className="w-fill lg:w-1/2 ">
->>>>>>> about
         <h2 className="text-2xl font-bold mb-3 text-[#3C4758]">WHO WE ARE</h2>
         <p className="leading-7 mb-5">
           Java Luxury is a premium fashion brand dedicated to redefining modern

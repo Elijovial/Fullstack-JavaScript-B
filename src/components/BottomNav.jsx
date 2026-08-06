@@ -30,6 +30,12 @@ function BottomNav({ darkMode, toggleTheme }) {
       name: "About Us",
       icon: <FaUsers size={24} />,
     },
+    {
+      path: "/About",
+      name: "About Us",
+      
+    },
+    
   ];
 
   return (
