@@ -4,10 +4,10 @@ import { useState } from "react";
 import Main from "./HOME/Main";
 import Product from "./component/Product";
 
-
+import Cart from "./Cart/Cart";
 import Home from "./components/pages/Home";
 
-import Carts from "./components/pages/Carts";
+
 import About from "./About/About";
 import BottomNav from "./components/BottomNav";
 
@@ -30,6 +30,7 @@ function App() {
             <Route index element={<Main darkMode={darkMode} toggleTheme={toggleTheme} />} />
             <Route path="/About" element={<About darkMode={darkMode} toggleTheme={toggleTheme} />} />
             <Route path="/Product" element={<Product darkMode={darkMode} toggleTheme={toggleTheme} />} />
+            <Route path="/Cart" element={<Cart darkMode={darkMode} toggleTheme={toggleTheme} />} />
           </Route>
       </Routes> 
     </div>

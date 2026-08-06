@@ -7,6 +7,7 @@ import Product from "../component/Product";
 
 
 
+
 function BottomNav({ darkMode, toggleTheme }) {
   const navItems = [
     {
@@ -20,7 +21,7 @@ function BottomNav({ darkMode, toggleTheme }) {
       icon: <AiOutlineProduct size={24} />,
     },
     {
-      path: "",
+      path: "/Cart",
       name: "Cart",
       icon: <FaShoppingCart size={24} />,
     },

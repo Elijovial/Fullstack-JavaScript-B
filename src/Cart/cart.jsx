@@ -2,8 +2,10 @@ import products from "../../public/data";
 import Products from "../../public/data";
 import { useState } from "react";
 
-export function Cart() {
-  const [itemsCart, setItemsCart] = useState(
+
+
+const cart = () => {
+   const [itemsCart, setItemsCart] = useState(
     Products.map((item) => ({
       ...item,
       quantity: 1,
@@ -79,3 +81,5 @@ export function Cart() {
     </div>
   );
 }
+
+export default cart
