@@ -3,7 +3,7 @@ import MainLayout from "./layouts/MainLayout";
 import { useState } from "react";
 import Main from "./HOME/Main";
 import Product from "./component/Product";
-import Settings from "./Settings/Settings";
+import Settings from "./Settings/Setting";
 
 import Cart from "./Cart/Cart";
 import Home from "./components/pages/Home";

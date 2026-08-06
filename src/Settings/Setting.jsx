@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import Profile from "./Profile-display";
 import AccountSettings from "./Account-settings";
 
-export function Settings() {
-  const [edit, setEdit] = useState(false);
+
+
+const Settings = () => {
+   const [edit, setEdit] = useState(false);
   const [userName, setUserName] = useState("User");
   const [userEmail, setUserEmail] = useState("youremail@gmail.com");
   const [userPassword, setUserPassword] = useState("");
@@ -41,3 +43,5 @@ export function Settings() {
     </>
   );
 }
+
+export default Settings
