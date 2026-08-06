@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import {Settings} from "./Settings/settings";
 
 const App = () => {
   return (
-    <div className='text-red-500'>App</div>
-  )
-}
+    <div>
+      <Settings />
+    </div>
+  );
+};
 
-export default App
+export default App;
