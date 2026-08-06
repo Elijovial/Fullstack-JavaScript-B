@@ -27,8 +27,8 @@ function BottomNav({ darkMode, toggleTheme }) {
       icon: <FaShoppingCart size={24} />,
     },
     {
-      path: "",
-      name: "settings",
+      path: "/About",
+      name: "About",
       icon: <FaUsers size={24} />,
     },
     {
