@@ -3,8 +3,10 @@ import Profile from "./Profile-display";
 import AccountSettings from "./Account-setting";
 
 
-export function Settings() {
-  const [edit, setEdit] = useState(false);
+
+
+const Settings = () => {
+   const [edit, setEdit] = useState(false);
   const [userName, setUserName] = useState("User");
   const [userEmail, setUserEmail] = useState("youremail@gmail.com");
   const [userPassword, setUserPassword] = useState("");
@@ -41,4 +43,10 @@ export function Settings() {
       </div>
     </>
   );
+<<<<<<< HEAD:src/Settings/settings.jsx
 }
+=======
+}
+
+export default Settings
+>>>>>>> d99b16c696e4f573802c8e6c38ba733a9cdaa040:src/Settings/Setting.jsx

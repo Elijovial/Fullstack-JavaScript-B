@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import Main from "../HOME/Main";
 import BottomNav from "../components/BottomNav";
 import Home from "../components/pages/Home";
 

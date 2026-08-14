@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Cart } from "../../Cart/cart";
 
 function Carts({ darkMode, toggleTheme }) {
@@ -9,3 +10,5 @@ function Carts({ darkMode, toggleTheme }) {
 }
 
 export default Carts;
+=======
+>>>>>>> d99b16c696e4f573802c8e6c38ba733a9cdaa040
