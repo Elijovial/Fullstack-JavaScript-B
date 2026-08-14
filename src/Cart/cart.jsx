@@ -85,4 +85,4 @@ export function Cart({ darkMode }) {
   );
 }
 
-export default cart
+export default cart;
