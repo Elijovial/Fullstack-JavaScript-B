@@ -1,8 +1,7 @@
-import products from "../../public/data";
 import Products from "../../public/data";
 import { useState } from "react";
 
-export function Cart() {
+export function Cart({ darkMode }) {
   const [itemsCart, setItemsCart] = useState(
     Products.map((item) => ({
       ...item,
@@ -40,7 +39,13 @@ export function Cart() {
   return (
     <div>
       <div className="flex justify-between w-[80%] mx-auto mt-5">
-        <h1 className="text-5xl text-black font-bold">Your Cart</h1>
+        <h1
+          className={
+            darkMode ? "bg-gray-900 text-white" : "bg-[#fff8e7] text-black"
+          }
+        >
+          Your Cart
+        </h1>
         <p>({itemsCart.length} items)</p>
       </div>
       <div>

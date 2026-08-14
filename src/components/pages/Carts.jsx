@@ -1,9 +1,9 @@
 import { Cart } from "../../Cart/cart";
 
-function Carts() {
+function Carts({ darkMode, toggleTheme }) {
   return (
     <div className="p-6">
-     <Cart />
+      <Cart darkMode={darkMode} />
     </div>
   );
 }

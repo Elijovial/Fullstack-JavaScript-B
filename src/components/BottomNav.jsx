@@ -1,5 +1,10 @@
 import { NavLink } from "react-router-dom";
-import { FaAssistiveListeningSystems, FaHome, FaShoppingCart, FaUsers } from "react-icons/fa";
+import {
+  FaAssistiveListeningSystems,
+  FaHome,
+  FaShoppingCart,
+  FaUsers,
+} from "react-icons/fa";
 import { AiOutlineProduct } from "react-icons/ai";
 import { IoSettingsOutline } from "react-icons/io5";
 import { FaGear } from "react-icons/fa6";
@@ -26,7 +31,7 @@ function BottomNav({ darkMode, toggleTheme }) {
       icon: <FaUsers size={24} />,
     },
     {
-      path: "/setting",
+      path: "/settings",
       name: "Settings",
       icon: <FaGear size={24} />,
     },

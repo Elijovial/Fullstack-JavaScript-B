@@ -3,7 +3,7 @@ function Nav() {
     <div className="sticky top-0 z-1 w-full bg-white shadow-md shadow-gray-400 flex justify-between items-center">
       <div className="my-1 flex flex-col items-center px-3 sm:px-10">
         <img
-          src="src\assets\java-luxury.png"
+          src="/src/assets/java-luxury.png"
           alt="logo"
           className="size-10 h-auto"
         />

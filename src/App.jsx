@@ -10,6 +10,7 @@ import BottomNav from "./components/BottomNav";
 import Main from "./HOME/Main";
 
 import Products from "./components/pages/Product";
+import { Settings } from "./settings/settings";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -32,7 +33,7 @@ function App() {
           <Route
             path="/"
             element={<Home darkMode={darkMode} toggleTheme={toggleTheme} />}
-          /> 
+          />
           <Route
             path="product"
             element={<Products darkMode={darkMode} toggleTheme={toggleTheme} />}
@@ -44,7 +45,11 @@ function App() {
           <Route
             path="about"
             element={<About darkMode={darkMode} toggleTheme={toggleTheme} />}
-          /> 
+          />
+          <Route
+            path="settings"
+            element={<Settings darkMode={darkMode} toggleTheme={toggleTheme} />}
+          />
         </Route>
       </Routes>
     </div>

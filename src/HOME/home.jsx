@@ -19,7 +19,7 @@ function Home() {
       </div>
       <div className="lg:mr-30 flex justify-center">
         <img
-          src="src\assets\ddd.png"
+          src="/src/assets/ddd.png"
           alt="image"
           className="w-90 h-auto md:w-150 md:h-auto "
         />
